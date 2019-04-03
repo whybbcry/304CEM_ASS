@@ -1,0 +1,595 @@
+<html>
+<title>Happy Travel</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css"><script type="text/javascript" src="main.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $("#fourSeason").click(function(){
+        window.location.href = "HK_hotel.html";
+      });
+
+      $("#Peninsula").click(function(){
+        window.location.href = "HK_PeninsulaHotel.html";
+      });
+
+      $("#RitzCarlton").click(function(){
+        window.location.href = "JP_hotel.html";
+      });
+
+      $("#okura").click(function(){
+        window.location.href = "JP_OkuraHotel.html";
+      });
+
+      $("#flight").click(function(){
+        window.location.href = "Flight/Flight.html";
+      });
+
+      $("#tw").click(function(){
+        window.location.href = "TW_Hotel.html";
+      });
+    });
+  </script>
+<style>
+
+@font-face { font-family: Delicious; src: url('AvenirLTStd-Light.otf'); }
+body { font-family: Delicious; }
+
+    #main {
+      margin: 0;
+      padding: 0;
+      font-family: verdana;
+      width: 100%;
+      height: auto;
+    }
+
+    /*Navigation Bar*/
+    nav {
+      margin: 0;
+      padding: 0;
+      font-family: verdana;
+      background-color: #0000;
+      line-height: 80px;
+    }
+
+    nav ul{
+      margin: 0;
+      display: inline-block;
+    }
+
+    nav ul li{
+      list-style-type: none;
+      display: inline-block;
+    }
+
+    nav ul li:hover{
+      color: #ffffff;
+
+    }
+
+    nav ul li a{
+      text-decoration: none;
+      color: #ffffff;
+      padding: 30px;
+    }
+
+    a:hover {
+      color: #ffffff;
+    }
+    /*Navigation Bar*/
+
+    .TextBlock {
+      float:left;
+      width: 100%;
+      height: 300px;
+      margin: 0px;
+      background: #BDBDBD;
+    }
+
+    div.BestOffer {
+      position: relative;
+      width: 100%;
+      display: flex;
+      overflow: none;
+    }
+
+    div.container{
+      width: 100%;
+      height: 600px;
+      margin: 0;
+      padding: 0;
+      position: relative;
+    }
+
+    .contain{
+      width: 100%;
+      height: 100vh;
+      position: relative;
+      background-image: url(HongKongHome.jpg);
+      background-size: 456px 371px;
+      background-repeat: no-repeat;
+    }
+
+    .contain .in{
+      position: relative;
+      width: 456px;
+      background-color: #0005;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+    }
+
+    .contain .in p{
+      color: #fff;
+      font-size: 45px;
+      font-family: arial;
+      text-align: center;;
+    }
+
+    .container {
+      z-index: -1;
+      display: :flex;
+      overflow: none;
+    }
+
+    .textwrapper{
+      color: white;
+      background: rgb(0, 0, 0);
+      background-color: rgba(0, 0, 0, 0.7);
+      position: absolute;
+      top: 294px;
+      width: 100%;
+    }
+
+    .textwrapper h1{
+      text-align: center;
+      color: #ffffff;
+      font-size: 10vw;
+    }
+
+    /*footer*/
+    .footer{
+      background-color: #222;
+      color: #fff;
+      margin-top: 30px;
+      margin-left: 0px;
+      padding-top: 30px;
+      width: 100%;
+    }
+
+    table {
+      display: table;
+      border-collapse: separate;
+    }
+
+    .foot {
+      width: 100%;
+    }
+
+    .address{
+      margin-left: 50px;
+      margin-right: 50px;
+      width: 70%;
+    }
+
+    .row h4{
+      margin-left: 50px;
+      margin-right: 50px;
+      width: 70%;
+      float: left;
+    }
+
+    .row{
+     width: 70%;
+     display: inline;
+    }
+
+    .address {
+      float: left;
+      display: inline;
+    }
+
+    .bottom-footer{
+      border-top: 1px solid #B2B2B2;
+      margin-top: 10px;
+      padding-top: 10px;
+      width: 100%;
+      color: #B2B2B2;
+    }
+
+    .footer-nav{
+      text-align: right;
+      list-style: none;
+      width: 100%;
+    }
+
+    .footer-nav li{
+      display: inline;
+      padding: 0px 30px 0px 0px;
+      width: 100%;
+    }
+
+    .footer-nav li:not(:first-child)before {
+      content: '|';
+      padding: 0px 0px;
+    }
+
+    .footer-nav a {
+      color: #B2B2B2;
+    }
+
+    .footer-nav a:hover {
+      color:#FFF;
+      text-decoration: none;
+    }
+
+    .footer{
+      position: absolute;
+      width: 100%;
+    }
+
+    .textwidget{
+      width: 31.33%;
+      margin-right: 3%;
+      float: right;
+    }
+
+    .textwidget p{
+      padding-top: 0.5em;
+      padding-bottom: 0.5em;
+    }
+
+    .widgetText {
+      width: 31.33%;
+      margin-right: 3%;
+      float: left;
+    }
+
+    .widgetText h2{
+      margin-top: 10px;
+      margin-bottom: 10px;
+      border: 0;
+    }
+
+    .widgetText p{
+      padding-top: 0.5em;
+      padding-bottom: 0.5em;
+    }
+
+    .info content{
+      width: 100%;
+      color:#FFF;
+    }
+
+    .footerSearch {
+      background-color: #222;
+      color: white;
+      border: 0.5px solid #E7E7E7;
+    }
+
+    .footerSearch:hover {
+      background-color: white;
+      color: #222;
+    }
+    /*footer*/
+
+    /*TEXT WRAPPER*/
+    .text-wrapper{
+      width: 100%;
+      position: relative;
+      margin-top: -35%;
+      display: inline-block;
+    }
+
+    .text-wrapper h5{
+      text-align: center;
+      color: #ffffff;
+      font-size: 2vw;
+    }
+
+    .text-wrapper h3{
+      text-align: center;
+      color: #ffffff;
+      font-size: 5vw;
+    }
+    /*TEXT WRAPPER*/
+
+    .item img{
+      width: 100%;
+      opacity: 0.9;
+      background-color: Black;
+      z-index:10;
+      top: -2000;
+    }
+
+    .box-text{
+        position: absolute;
+        top: 0; right: 0;
+        bottom: 0; left: 0;
+        width: 456px;
+        height: 371px;
+        text-align: center;
+        background-color: rgba(0,0,0,0.8);
+        opacity: 0;
+        -webkit-transition: opacity 0.6s;
+        -moz-transition: opacity 0.6s;
+        transition: opacity 0.6s;
+        vertical-align:middle;
+        line-height:200px;
+    }
+
+    .box-text:hover{
+        opacity: 0.3;
+    }
+
+    .box-text h3{
+        color: #FFF;
+        display: inline-table;
+        vertical-align:middle;
+        line-height:100%;
+    }
+
+div.cd-cart{position: absolute;z-index:1}
+
+.gallery {
+  text-align:center;
+  background-color: #ECF0F1;
+  display: flex;
+  overflow: none;
+  cursor:pointer;
+  }
+
+  .gallery-image{
+    cursor:pointer;
+    position: relative;
+    display: block;
+  }
+
+  .gallery-text{
+      position: absolute;
+      top: 280; right: 0;
+      bottom: 0; left: 0;
+      width: 421px;
+      height: 90px;
+      text-align: center;
+      background-color: rgba(0,0,0,0.8);
+      opacity: 0.7;
+      -webkit-transition: opacity 0.6s;
+      -moz-transition: opacity 0.6s;
+      transition: opacity 0.6s;
+       vertical-align:middle;
+       line-height:200px;
+  }
+
+  .gallery:hover .gallery-text {
+    opacity: 1;
+    background-color: rgba(128, 203, 196,0.8);
+}
+
+
+  .gallery-text h3{
+      color: white;
+      display: inline-table;
+       vertical-align:middle;
+       line-height:100%;
+  }
+
+  #nat {
+    display:none;
+    position:relative;
+  }
+
+  #place {
+    display:none;
+    position:relative;
+  }
+
+</style>
+
+<!JQuery>
+<script>
+  $(document).scroll(function(){
+    var scroll = $(this).scrollTop();
+    var img = $(".mainGallery");
+     if(scroll > 250) {
+       $('.mainGallery').fadeIn(2000);
+     } else {
+       $('.mainGallery').fadeOut(500);
+     }
+  });
+
+  $(document).ready(function(){
+    $('#nat').css({'display':'block', 'opacity':'0', 'right':'40%'}).animate({'opacity':'1','left':'0%'}, 800);
+    $('#place').css({'display':'block', 'opacity':'0', 'left':'40%'}).animate({'opacity':'1','left':'0%'}, 1000);
+  });
+</script>
+<!JQuery>
+
+<body style="background-color: white">
+
+  <!Navigation Bar>
+  <div id="main">
+  <nav class="navbar" style="position:relative;z-index:1;text-align:center;">
+    <a href="home.html"><img src="logo.png"  height="101"></a>
+    <ul>
+      <li><a href="hotel.html">HOTEL</a></li>
+      <li><a href="Flight/Flight.html">Flight</a></li>
+      <li><a href="SignUp.html">Sign Up</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+  </nav>
+  </div>
+  <!Navigation Bar>
+
+<div class="container">
+  <div id="myCarousel" style="top:-200;" class="carousel slide" data-ride="carousel">
+
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="HongKongHome.jpg" style="width:100%;">
+        <div class="text-wrapper">
+          <h5 id="nat"><u>CHINA</u></h5>
+          <h3 id="place">HONG KONG</h3>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="TaiwanHome.jpg" style="width:100%;">
+        <div class="text-wrapper">
+          <h5 id="nation"><u>TAIWAN</u></h5>
+          <h3>TAIPEI</h3>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="JapanTem.jpg" style="width:100%;">
+        <div class="text-wrapper">
+          <h5><u>JAPAN</u></h5>
+          <h3>TOKYO</h3>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<center><font size="6">OUR BEST OFFERS</font></center>
+<center><font size="3">CHECK OUT OUR BEST TOURS</font></center><br>
+
+<div class="mainGallery">
+  <div class="main" style=" display: flex; overflow: none;">
+  <div class="gallery" id="fourSeason">
+    <div class="gallery-image">
+      <img src="HK_Central.jpg"  style="width:421px; height:370px;" />
+      <div class="gallery-text" >
+        <h3>Hong Kong</h3><i style="display: none;">5</i>
+      </div>
+    </div>
+  </div>
+
+  <div class="gallery" id="Peninsula">
+    <div class="gallery-image">
+      <img src="HK_peninsula.jpg"  style="width:421px; height:370px;" />
+      <div class="gallery-text" id="twhotel">
+        <h3>Peninsula</h3><i style="display: none;">4</i>
+        <h4>
+          Greatest Hotel in Hong Kong
+        </h4>
+      </div>
+    </div>
+  </div>
+
+  <div class="gallery" id="RitzCarlton">
+    <div class="gallery-image">
+      <img src="JP_home.jpg" style="width:421px; height:370px;" >
+      <div class="gallery-text" id="hkhotel">
+        <h3>Japan</h3><i style="display: none;">4</i>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="main" style=" display: flex; overflow: none;">
+  <div class="gallery" id="okura">
+    <div class="gallery-image">
+      <img src="JP_Okura.jpg"  style="width:421px; height:370px;" />
+      <div class="gallery-text" >
+        <h3>Okura</h3><i style="display: none;">5</i>
+        <h4>
+         Best Hotel in Japan
+        </h4>
+      </div>
+    </div>
+  </div>
+
+  <div class="gallery" id="flight">
+    <div class="gallery-image">
+      <img src="Home_airport.jpg"  style="width:421px; height:370px;" />
+      <div class="gallery-text" id="twhotel">
+        <h3>Flight</h3><i style="display: none;">4</i>
+        <h4>
+          Get The Best Ticket
+        </h4>
+      </div>
+    </div>
+  </div>
+
+  <div class="gallery" id="tw">
+    <div class="gallery-image">
+      <img src="Taiwan.jpg" style="width:421px; height:370px;" >
+      <div class="gallery-text" id="hkhotel">
+        <h3>Taiwan</h3><i style="display: none;">4</i>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+
+
+<!Footer>
+<footer class="footer" style="color=#FFF;  left-margin:300px;">
+  <div class="foot" style="display:inline-block; color:#FFF;">
+   <div class = "info" style="color:#FFF; width:100%; padding:0 0 0 50;">
+    <table style="">
+      <tr class="content" style="color:#FFF;">
+        <th style="padding: 0 20 20 40;"><img src="logo.png"  height="70"></th>
+        <th style="padding: 0 20 20 40;"><h2>CONTACT INFO</h2></th>
+        <th style="padding: 0 20 20 40;"><h2>NEWSLETTER</h2></th>
+      </tr>
+      <tr class="contentInfo" style="color:#FFF;">
+        <th style="width:30%; padding: 0 20 20 40;">
+          <h5>Happy Travel is a company which provides travel
+          and tourism related services to the customers
+          on behalf of suppliers. Products include airlines,
+          hotels, package tours and travel insurance</h5>
+        </th>
+
+        <th style="width:30%; padding: 0 20 20 40;">
+        <h5><i class="fa fa-location-arrow" aria-hidden="true"></i>
+        Rooms 801-804, <br>
+        8th Floor, Alexandra House, <br>
+        18 Chater Road, Central,<br>
+        Hong Kong.<br><br>
+
+        <i class="fa fa-phone" aria-hidden="true"></i>  +852-26549815<br><br>
+        <i class="fa fa-envelope-o" aria-hidden="true"></i>  happytravel@info.com</h5>
+        </th>
+
+        <th style="width:30%; padding: 0 20 20 40;">
+          <form>
+          <input type="text" name="usrname" placeholder="E-Mail" style="color: grey"><br><br>
+          <input class="footerSearch" type="reset" value="submit"></form>
+        </th>
+      </tr>
+    </table>
+  </div>
+
+    <div class="bottom-footer">
+      <div class="col-md-5">@2017 Happy Travel. All Rights Reserved.</div>
+      <div class="col-md-7">
+        <ul class="footer-nav">
+          <li><a href="home.html">HOME</a></li>
+          <li><a href="hotel.html">HOTEL</a></li>
+          <li><a href="FLIGHT/flight.html">FLIGHT</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<!Footer>
+
+</body>
+</html>
